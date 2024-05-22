@@ -1,21 +1,54 @@
+Claro, aquí tienes una versión mejorada y organizada del texto para tu README de GitHub:
+
+---
+
 # Consignatario de Hacienda
-Elegi el consignatario de hacienda como tematica, los usuarios interesados en vender su ganado en la provincia de Bs As pueden estar interesados en suscribirse en este servicio. Es requerido para enviar el formulario cargar su e-mail, numero de telefono y captcha, el captcha acegura que no se utilicen bots para enviar el formulario y sobrecargar el sistema, mientras que el e-mail y el numero es necesario para poder ponerse en contacto por el cliente aunque el formulario este incompleto en los otros campos (por ejemplo una persona mayor puede que no sepa los datos o no sepa como completarlos, al menos de esta manera no se perderia la chance de recibir un nuevo cliente).
-Utilice una lista desplegable como campos para que el usuario pueda cargar la raza de sus vacunos para venta, la raza determina tambien el precio de la oferta que se puede hacer a futuro asi como tambien da a una idea al usuario de las razas por las cuales el consignatario esta mas interesado. En caso de tener varias razas puede tambien utilizar la opcion de poner varias razas y ahi quedara en manos del consignatario realizar una oferta adecuada, algo similar pasa con "otras razas" no tiene caso realizar una opcion para que se seleccionen multiples opciones ya que normalmente en esos casos el consignatario arregla un precio dependiendo el cliente.
-En el caso de categoria se deja al usuario rellenarla como este desee, la categoria da un rango de peso, un rango de edad y sexo del vacuno, pero tiene demasiadas variables e incluso cambian con el tiempo, por ejemplo, un usuario quiere vender sus vacas de raza Hereford y para eso debe ingresar a que categoria corresponden entonces el usuario aclararia lo siguiente "invernada, vaquillona, menor a X cantidad de kilos", por esta razon este campo deja un input para poer rellenar. Ademas puede existir el caso que un usuario quiera vender un ganado no apto para consumo (terneros) pero que aun asi puede que sean vendibles a otros productores ganaderos a los cuales el consignatario puede contactar.
-Al no ser necesario especificar el peso lo unico que queda como variable es cargar la cantidad de ganado que se desea vender, esto es un factor importante para el consignatario porque va a determinar si es que puede ofertar un valor apropiado para la cantidad de vacunos o tener que salir a buscar un comprador.
 
-### Gama de colores justificacion:
-Dentro de la gama de colores elegi una paleta de verdes, rojo para el mensaje de error. Al ser un verde mas desaturado no podia poner un rojo demasiado puro por las reglas del mismo diseño que utilice. La idea era mantener una paleta mas baja posible para dejar la idea de "naturaleza" dentro del registro.
-Para elegir la gama de rojos me base en la guia de los profesores, originalmente tenian un color naranja o amarillo en si mismo para que tuviera un razonamiento estetico en cuanto a teoria del color, sin embargo esos colores desentonaban por lo que se cambio a un rojo desaturado.
+El tema elegido para este proyecto es el consignatario de hacienda, dirigido a usuarios interesados en vender su ganado en la provincia de Buenos Aires. Este servicio permite suscribirse a través de un formulario en línea. 
 
-### Imagen de fondo
-Para un consignatario de hacienda es importante identificar el producto a vender. Elegi esta imagen porque demuestra claramente al contexto del registro para el usuario. El usuario debe saber que se esta registrando y que esta relacionado al ganado vacuno.
+## Características del Formulario
 
-### Tipografia
-Para la tipografia me centre en las tipografias sin serif, cambiando el estilo de la misma a bold cuando tiene que mostrar un mensaje para mostrar mayor contraste. Dentro de la legibilidad da una mejor impresion para el para el usuario, ademas que aporta mejor legibilidad.
+1. **Datos Requeridos**:
+   - **Correo Electrónico**: Para establecer contacto con el cliente.
+   - **Número de Teléfono**: Para facilitar la comunicación directa.
+   - **Captcha**: Para prevenir el uso de bots y evitar la sobrecarga del sistema.
 
-### Funcionalidades
-Al cargar la pagina veremos una animacion del formulario desplazandose desde arriba hacia abajo, luego podemos tambien ver que el boton de enviar posee un estilo propio con transicion que se modifica al pasar el cursor por encima. Se muestran tambien mensajes de error y se remarcan los campos que faltan rellenar para que luego de unos segundos desaparezcan estos mensajes.
+   Estos datos son esenciales incluso si el formulario no está completamente llenado, garantizando que podamos contactar a clientes potenciales, como personas mayores que puedan tener dificultades para completar todos los campos.
 
-link de funcionalidad: 
-https://www.loom.com/share/6c1e34468eaa4131aedddfa083936a77?sid=0d89cbaf-37e8-4a4e-a65e-52d46024b209
+2. **Raza de Ganado**:
+   - Utilicé una lista desplegable para que los usuarios seleccionen la raza de sus vacunos.
+   - La raza influye en el precio de oferta y ayuda a los usuarios a entender cuáles son las razas de mayor interés para el consignatario.
+   - Se incluye la opción de seleccionar múltiples razas y una categoría de "otras razas" para flexibilizar las ofertas.
+
+3. **Categoría del Ganado**:
+   - Este campo es de entrada libre, permitiendo a los usuarios especificar detalles como rango de peso, edad y sexo del vacuno.
+   - Este enfoque se debe a la variabilidad de las categorías y su evolución con el tiempo, por ejemplo: "invernada, vaquillona, menor a X kilos".
+
+4. **Cantidad de Ganado**:
+   - Es crucial especificar la cantidad de ganado a vender, ya que esto influye en la oferta que el consignatario puede realizar o si necesita buscar un comprador adicional.
+
+## Gama de Colores
+
+- **Verde**: Utilicé una paleta de verdes desaturados para evocar la naturaleza.
+- **Rojo**: Para los mensajes de error, un rojo desaturado que no desentone con la paleta general.
+
+Esta selección se hizo basada en la teoría del color y la guía proporcionada por los profesores, ajustando para mantener una coherencia estética.
+
+## Imagen de Fondo
+
+La imagen elegida identifica claramente el contexto del registro relacionado con el ganado vacuno, ayudando a los usuarios a comprender el propósito del formulario.
+
+## Tipografía
+
+- Utilicé tipografías sans-serif para mejorar la legibilidad.
+- Los mensajes importantes se muestran en negrita para mayor contraste y claridad.
+
+## Funcionalidades
+
+- **Animación Inicial**: Al cargar la página, el formulario se desplaza desde arriba hacia abajo.
+- **Botón de Enviar**: Estilo propio con una transición que se activa al pasar el cursor.
+- **Mensajes de Error**: Campos no rellenados se resaltan y los mensajes de error aparecen y desaparecen después de unos segundos.
+
+## Demostración en Video
+
+Puedes ver la funcionalidad del formulario en el siguiente enlace: [Video de Funcionalidad](https://www.loom.com/share/6c1e34468eaa4131aedddfa083936a77?sid=0d89cbaf-37e8-4a4e-a65e-52d46024b209)
