@@ -1,0 +1,12 @@
+{
+  "name": "tpentregable3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "sass -w sass/main.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

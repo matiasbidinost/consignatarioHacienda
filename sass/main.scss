@@ -1,0 +1,250 @@
+$background-image: url('../img/cows.jpg');
+$button-base: #4CAF50;
+$color-error: #f53a3a;
+$text-color: #333;
+$register-color: #e0f2e9;
+
+body {
+    background-image: $background-image;
+    font-family: sans-serif;
+    background-color: $register-color;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Animaciones y estilos adicionales */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.message.valid {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.invalid {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+input.error {
+    border-color: $color-error;
+}
+
+.formRegister {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: $register-color; /* Color de fondo del formulario, gama de verdes */
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #298d2d;
+}
+
+#razaText {
+    display: block; /* Asegura que se comporte como un bloque */
+    margin-bottom: 10px;
+    margin-top: 20px; /* Agrega un margen superior para separarlo del contenido anterior */
+    color: $text-color;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    width: 100%;
+    border-color: $button-base;
+    padding: 8px;
+    border: 1px solid $register-color;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#captcha-container {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: $button-base;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#captcha-response {
+    width: 100%;
+    box-sizing: border-box;
+}
+#email.error, #telefono.error, #captcha-response.error{
+border: 2px solid $color-error;
+}
+
+#message, #message.valid {
+    margin-top: 10px;
+    text-align: center;
+    color: $button-base; /* Color verde para mensaje de captcha válido */
+    font-weight: bold;
+}
+
+#message.invalid, #num.error, #e_mail.error, #capt_cha.error {
+    color: $color-error; /* Gama de rojos para mensaje de captcha inválido */
+    font-weight: bold;
+}
+
+button {
+    background-color: #298d2d;
+    color: white;
+    padding: 12px 24px; /* Incrementamos el padding para un aspecto más destacado */
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Agregamos una transición suave para el hover */
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    background: $button-base;
+    transition: height 0.6s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+button:hover::after {
+    height: 100%;
+}
+
+.custom-select-container {
+    position: relative;
+    width: 100%;
+    border: 1px solid $register-color;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.selected {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top: none;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    display: none;
+    z-index: 10;
+}
+
+.select-options li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.select-options li:hover {
+    background-color: #f0f0f0;
+}
+
+form {
+    position: relative;
+    animation-name: slideDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .formRegister {
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #captcha-container {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formRegister {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #captcha-container {
+        font-size: 20px;
+    }
+}

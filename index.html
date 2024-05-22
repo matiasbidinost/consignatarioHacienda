@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Compra de Ganado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form class="formRegister">
+        <h2>Quiero vender mi ganado</h2>
+
+        <div class="datos-personales">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellido" >Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+
+            <label for="email" id="e_mail">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono" id="num">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <a id="razaText">¿De qué raza es el vacuno?</a>
+        <div class="custom-select-container">
+            <div class="selected">Seleccionar</div>
+            <ul class="select-options">
+                <li data-value="Angus">Angus</li>
+                <li data-value="Hereford">Hereford</li>
+                <li data-value="Simmental">Simmental</li>
+                <li data-value="Brangus">Brangus</li>
+                <li data-value="Braford">Braford</li>
+                <li data-value="Limousin">Limousin</li>
+                <li data-value="Criollo">Criollo</li>
+                <li data-value="Holstein">Holstein</li>
+                <li data-value="Razas_varias">Razas varias</li>
+                <li data-value="otro">Otro</li>
+            </ul>
+        </div>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+        <label for="Categoria">Categoria:</label>
+        <input type="text" id="Categoria" name="Categoria" required>
+
+        <div class="captcha">
+            <p id="capt_cha">Completa el captcha para continuar:</p>
+            <div id="captcha-container"></div>
+            <input type="text" id="captcha-response" name="captcha-response" required>
+        </div>
+
+        <button type="submit" id="register">Enviar solicitud</button>
+
+        <span id="message"></span>
+    </form>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
