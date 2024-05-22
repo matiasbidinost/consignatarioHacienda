@@ -1,1 +1,21 @@
-# consignatarioHacienda
+# Consignatario de Hacienda
+Elegi el consignatario de hacienda como tematica, los usuarios interesados en vender su ganado en la provincia de Bs As pueden estar interesados en suscribirse en este servicio. Es requerido para enviar el formulario cargar su e-mail, numero de telefono y captcha, el captcha acegura que no se utilicen bots para enviar el formulario y sobrecargar el sistema, mientras que el e-mail y el numero es necesario para poder ponerse en contacto por el cliente aunque el formulario este incompleto en los otros campos (por ejemplo una persona mayor puede que no sepa los datos o no sepa como completarlos, al menos de esta manera no se perderia la chance de recibir un nuevo cliente).
+Utilice una lista desplegable como campos para que el usuario pueda cargar la raza de sus vacunos para venta, la raza determina tambien el precio de la oferta que se puede hacer a futuro asi como tambien da a una idea al usuario de las razas por las cuales el consignatario esta mas interesado. En caso de tener varias razas puede tambien utilizar la opcion de poner varias razas y ahi quedara en manos del consignatario realizar una oferta adecuada, algo similar pasa con "otras razas" no tiene caso realizar una opcion para que se seleccionen multiples opciones ya que normalmente en esos casos el consignatario arregla un precio dependiendo el cliente.
+En el caso de categoria se deja al usuario rellenarla como este desee, la categoria da un rango de peso, un rango de edad y sexo del vacuno, pero tiene demasiadas variables e incluso cambian con el tiempo, por ejemplo, un usuario quiere vender sus vacas de raza Hereford y para eso debe ingresar a que categoria corresponden entonces el usuario aclararia lo siguiente "invernada, vaquillona, menor a X cantidad de kilos", por esta razon este campo deja un input para poer rellenar. Ademas puede existir el caso que un usuario quiera vender un ganado no apto para consumo (terneros) pero que aun asi puede que sean vendibles a otros productores ganaderos a los cuales el consignatario puede contactar.
+Al no ser necesario especificar el peso lo unico que queda como variable es cargar la cantidad de ganado que se desea vender, esto es un factor importante para el consignatario porque va a determinar si es que puede ofertar un valor apropiado para la cantidad de vacunos o tener que salir a buscar un comprador.
+
+### Gama de colores justificacion:
+Dentro de la gama de colores elegi una paleta de verdes, rojo para el mensaje de error. Al ser un verde mas desaturado no podia poner un rojo demasiado puro por las reglas del mismo diseño que utilice. La idea era mantener una paleta mas baja posible para dejar la idea de "naturaleza" dentro del registro.
+Para elegir la gama de rojos me base en la guia de los profesores, originalmente tenian un color naranja o amarillo en si mismo para que tuviera un razonamiento estetico en cuanto a teoria del color, sin embargo esos colores desentonaban por lo que se cambio a un rojo desaturado.
+
+### Imagen de fondo
+Para un consignatario de hacienda es importante identificar el producto a vender. Elegi esta imagen porque demuestra claramente al contexto del registro para el usuario. El usuario debe saber que se esta registrando y que esta relacionado al ganado vacuno.
+
+### Tipografia
+Para la tipografia me centre en las tipografias sin serif, cambiando el estilo de la misma a bold cuando tiene que mostrar un mensaje para mostrar mayor contraste. Dentro de la legibilidad da una mejor impresion para el para el usuario, ademas que aporta mejor legibilidad.
+
+### Funcionalidades
+Al cargar la pagina veremos una animacion del formulario desplazandose desde arriba hacia abajo, luego podemos tambien ver que el boton de enviar posee un estilo propio con transicion que se modifica al pasar el cursor por encima. Se muestran tambien mensajes de error y se remarcan los campos que faltan rellenar para que luego de unos segundos desaparezcan estos mensajes.
+
+link de funcionalidad: 
+https://www.loom.com/share/6c1e34468eaa4131aedddfa083936a77?sid=0d89cbaf-37e8-4a4e-a65e-52d46024b209

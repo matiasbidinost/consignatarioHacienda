@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }, 3000);
     });
-    
+    //alterna la visibilidad del elemento options entre "block" y "none"
     selected.addEventListener('click', function () {
         options.style.display = options.style.display === 'block' ? 'none' : 'block';
     });
